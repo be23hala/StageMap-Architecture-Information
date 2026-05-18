@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="User flows - Projet StageMap en architecture de l'information.">
+  <title>User flows | StageMap</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="page-flows">
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="StageMap - Accueil">
+      <span class="brand-mark">SM</span>
+      <span>StageMap</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir la navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="flows.html">User flows</a>
+      <a href="wireframes.html">Wireframes</a>
+      <a href="metadata.html">Métadonnées</a>
+      <a href="ontology.html">Ontologie</a>
+      <a href="content-model.html">Modèle de contenu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="container page-hero">
+  <p class="breadcrumb"><a href="index.html">Accueil</a> / User flows</p>
+  <h1>Parcours utilisateurs et flowcharts</h1>
+  <p>
+    Les user flows décrivent les étapes suivies par un utilisateur pour atteindre un objectif.
+    Ici, trois scénarios clés ont été retenus pour représenter les usages majeurs du portail.
+  </p>
+  <div class="pill-row">
+    <span class="pill">Recherche d’offre</span>
+    <span class="pill">Préparation de candidature</span>
+    <span class="pill">Exploration d’entreprise</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container flow-card">
+    <h2>Flow 1 — Trouver une offre de stage adaptée</h2>
+    <p>Objectif : permettre à un étudiant d’identifier une offre pertinente en quelques étapes.</p>
+    <div class="flow-track">
+      <div class="flow-step"><strong>1. Accueil</strong><span>Entrée dans le portail.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>2. Offres</strong><span>Ouverture de la liste.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>3. Filtres</strong><span>Domaine, ville, durée.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>4. Résultats</strong><span>Comparaison des offres.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>5. Détail</strong><span>Lecture complète de l’offre.</span></div>
+    </div>
+    <div class="annotation">
+      <strong>Décision de conception :</strong> les filtres apparaissent avant les résultats afin de soutenir
+      une recherche ciblée et de limiter la surcharge cognitive.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container flow-card">
+    <h2>Flow 2 — Préparer sa candidature</h2>
+    <p>Objectif : guider l’utilisateur depuis un besoin flou jusqu’à une ressource concrète.</p>
+    <div class="flow-track">
+      <div class="flow-step"><strong>1. Accueil</strong><span>Repérage de la rubrique Conseils.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>2. Conseils</strong><span>Choix d’un thème.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>3. CV</strong><span>Lecture du guide.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>4. Ressource</strong><span>Accès à une checklist.</span></div>
+    </div>
+    <div class="annotation">
+      <strong>Décision de conception :</strong> les ressources pratiques sont reliées aux contenus-conseils
+      pour favoriser la continuité entre apprentissage et action.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container flow-card">
+    <h2>Flow 3 — Explorer une entreprise</h2>
+    <p>Objectif : comprendre une organisation et les stages qu’elle propose.</p>
+    <div class="flow-track">
+      <div class="flow-step"><strong>1. Accueil</strong><span>Accès à la section Entreprises.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>2. Secteur</strong><span>Sélection d’un domaine.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>3. Fiche</strong><span>Consultation de l’entreprise.</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><strong>4. Stages liés</strong><span>Voir les opportunités.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container diagram-card">
+    <h2>Flowchart synthétique</h2>
+    <div class="flow-lane" role="img" aria-label="Tableau résumant les trois parcours utilisateurs">
+      <div class="lane-label">Parcours</div>
+      <div class="lane-label">Étape 1</div>
+      <div class="lane-label">Étape 2</div>
+      <div class="lane-label">Résultat</div>
+
+      <div class="lane-cell"><strong>Recherche d’offre</strong></div>
+      <div class="lane-cell">Offres</div>
+      <div class="lane-cell">Filtres</div>
+      <div class="lane-cell">Détail d’une offre</div>
+
+      <div class="lane-cell"><strong>Candidature</strong></div>
+      <div class="lane-cell">Conseils</div>
+      <div class="lane-cell">Guide CV</div>
+      <div class="lane-cell">Checklist et modèles</div>
+
+      <div class="lane-cell"><strong>Entreprise</strong></div>
+      <div class="lane-cell">Secteur</div>
+      <div class="lane-cell">Fiche entreprise</div>
+      <div class="lane-cell">Stages associés</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-card">
+    <div>
+      <strong>StageMap — Architecture de l’information d’un portail de stages</strong>
+      <p>Mini-site statique réalisé pour présenter la démarche de modélisation, d’organisation et de structuration de l’information.</p>
+    </div>
+    <a class="back-top" href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>

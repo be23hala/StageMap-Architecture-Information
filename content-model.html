@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modélisation de contenu - Projet StageMap en architecture de l'information.">
+  <title>Modélisation de contenu | StageMap</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="page-content">
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="StageMap - Accueil">
+      <span class="brand-mark">SM</span>
+      <span>StageMap</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir la navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="flows.html">User flows</a>
+      <a href="wireframes.html">Wireframes</a>
+      <a href="metadata.html">Métadonnées</a>
+      <a href="ontology.html">Ontologie</a>
+      <a href="content-model.html">Modèle de contenu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="container page-hero">
+  <p class="breadcrumb"><a href="index.html">Accueil</a> / Modèle de contenu</p>
+  <h1>Modélisation et structuration de contenu</h1>
+  <p>
+    Le modèle de contenu décrit les objets éditoriaux manipulés par le portail,
+    leurs champs, leurs relations et leur finalité dans l’expérience utilisateur.
+  </p>
+</section>
+
+<section class="section">
+  <div class="container content-model-card">
+    <h2>1. Les quatre types de contenus retenus</h2>
+    <div class="model-columns">
+      <article class="model-card">
+        <h3>Offre de stage</h3>
+        <dl>
+          <dt>But</dt><dd>Présenter une opportunité exploitable.</dd>
+          <dt>Champs</dt><dd>Titre, entreprise, domaine, ville, durée, niveau, compétences, description.</dd>
+          <dt>Relations</dt><dd>Liée à une entreprise, à un domaine et à plusieurs compétences.</dd>
+        </dl>
+      </article>
+      <article class="model-card">
+        <h3>Article-conseil</h3>
+        <dl>
+          <dt>But</dt><dd>Accompagner l’utilisateur dans sa candidature.</dd>
+          <dt>Champs</dt><dd>Titre, catégorie, résumé, sections, ressource associée.</dd>
+          <dt>Relations</dt><dd>Peut pointer vers une checklist ou un modèle.</dd>
+        </dl>
+      </article>
+      <article class="model-card">
+        <h3>Fiche entreprise</h3>
+        <dl>
+          <dt>But</dt><dd>Présenter un recruteur ou un secteur.</dd>
+          <dt>Champs</dt><dd>Nom, secteur, ville, présentation, types de stages proposés.</dd>
+          <dt>Relations</dt><dd>Liée à des offres de stage.</dd>
+        </dl>
+      </article>
+      <article class="model-card">
+        <h3>Ressource téléchargeable</h3>
+        <dl>
+          <dt>But</dt><dd>Fournir un support directement réutilisable.</dd>
+          <dt>Champs</dt><dd>Titre, format, public visé, description, usage recommandé.</dd>
+          <dt>Relations</dt><dd>Associée à un article-conseil.</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container table-card">
+    <h2>2. Tableau synthétique du modèle de contenu</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Type de contenu</th>
+            <th>Champs obligatoires</th>
+            <th>Champs optionnels</th>
+            <th>Relations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Offre de stage</td>
+            <td>Titre, domaine, ville, durée, type</td>
+            <td>Salaire indicatif, modalité</td>
+            <td>Entreprise, compétences</td>
+          </tr>
+          <tr>
+            <td>Article-conseil</td>
+            <td>Titre, catégorie, contenu</td>
+            <td>Niveau de difficulté</td>
+            <td>Ressources</td>
+          </tr>
+          <tr>
+            <td>Fiche entreprise</td>
+            <td>Nom, secteur, localisation</td>
+            <td>Site web, contact</td>
+            <td>Offres</td>
+          </tr>
+          <tr>
+            <td>Ressource</td>
+            <td>Titre, format, description</td>
+            <td>Auteur, date de mise à jour</td>
+            <td>Article-conseil</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <article class="callout">
+      <h2>3. Exemple de relation entre contenus</h2>
+      <p>
+        L’article « Rédiger un CV de stage » peut être relié à la ressource
+        « Modèle de CV étudiant » et à la checklist « Avant d’envoyer sa candidature ».
+      </p>
+      <div class="code-like">Article-conseil → Ressource associée → Checklist</div>
+    </article>
+    <article class="callout">
+      <h2>4. Bénéfice pour l’architecture de l’information</h2>
+      <p>
+        Un modèle de contenu bien défini facilite la cohérence éditoriale,
+        la réutilisation des blocs d’information et l’évolution future du portail.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container callout">
+    <h2>5. Conclusion générale du projet</h2>
+    <p>
+      StageMap démontre qu’une architecture de l’information efficace ne dépend pas uniquement
+      du design visuel. Elle repose d’abord sur une structuration logique des contenus,
+      des parcours compréhensibles, des métadonnées normalisées et une modélisation sémantique
+      cohérente. Le mini-site constitue ainsi une traduction concrète de ces principes.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-card">
+    <div>
+      <strong>StageMap — Architecture de l’information d’un portail de stages</strong>
+      <p>Mini-site statique réalisé pour présenter la démarche de modélisation, d’organisation et de structuration de l’information.</p>
+    </div>
+    <a class="back-top" href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>

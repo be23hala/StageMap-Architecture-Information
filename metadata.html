@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Métadonnées et vocabulaire contrôlé - Projet StageMap en architecture de l'information.">
+  <title>Métadonnées et vocabulaire contrôlé | StageMap</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="page-metadata">
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="StageMap - Accueil">
+      <span class="brand-mark">SM</span>
+      <span>StageMap</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir la navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="flows.html">User flows</a>
+      <a href="wireframes.html">Wireframes</a>
+      <a href="metadata.html">Métadonnées</a>
+      <a href="ontology.html">Ontologie</a>
+      <a href="content-model.html">Modèle de contenu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="container page-hero">
+  <p class="breadcrumb"><a href="index.html">Accueil</a> / Métadonnées</p>
+  <h1>Métadonnées, taxonomies et vocabulaire contrôlé</h1>
+  <p>
+    La qualité de l’architecture de l’information dépend de la façon dont les contenus sont décrits.
+    Les métadonnées rendent les offres trouvables, filtrables et réutilisables.
+  </p>
+</section>
+
+<section class="section">
+  <div class="container table-card">
+    <h2>1. Schéma de métadonnées d’une offre de stage</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Champ</th>
+            <th>Type</th>
+            <th>Exemple</th>
+            <th>Utilité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Titre</td><td>Texte</td><td>Stage Data Analyst</td><td>Identifier rapidement l’offre.</td></tr>
+          <tr><td>Entreprise</td><td>Référence</td><td>NovaTech</td><td>Relier l’offre à une fiche entreprise.</td></tr>
+          <tr><td>Domaine</td><td>Vocabulaire contrôlé</td><td>Data & IA</td><td>Filtrer par secteur.</td></tr>
+          <tr><td>Ville</td><td>Vocabulaire contrôlé</td><td>Rabat</td><td>Géolocaliser la recherche.</td></tr>
+          <tr><td>Durée</td><td>Valeur normalisée</td><td>2 mois</td><td>Comparer les offres.</td></tr>
+          <tr><td>Niveau</td><td>Vocabulaire contrôlé</td><td>Cycle ingénieur</td><td>Vérifier l’adéquation au profil.</td></tr>
+          <tr><td>Compétences</td><td>Liste de termes</td><td>Python, SQL, Power BI</td><td>Relier l’offre aux compétences.</td></tr>
+          <tr><td>Type de stage</td><td>Vocabulaire contrôlé</td><td>Stage d’application</td><td>Structurer les profils d’offres.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container meta-schema">
+    <article class="schema-box">
+      <h2>2. Métadonnées descriptives</h2>
+      <ul class="checklist">
+        <li>Titre</li>
+        <li>Résumé</li>
+        <li>Entreprise</li>
+        <li>Domaine</li>
+      </ul>
+    </article>
+    <article class="schema-box">
+      <h2>3. Métadonnées opérationnelles</h2>
+      <ul class="checklist">
+        <li>Ville</li>
+        <li>Durée</li>
+        <li>Niveau requis</li>
+        <li>Compétences attendues</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container diagram-card">
+    <h2>4. Vocabulaire contrôlé proposé</h2>
+    <p class="section-intro">
+      Un vocabulaire contrôlé limite les synonymes non maîtrisés, évite les doublons
+      et améliore la cohérence des filtres.
+    </p>
+    <div class="controlled-vocab">
+      <section class="vocab-list">
+        <h4>Domaines autorisés</h4>
+        <ul>
+          <li>Data & IA</li>
+          <li>Développement logiciel</li>
+          <li>Cybersécurité</li>
+          <li>Réseaux & Cloud</li>
+          <li>Finance & contrôle</li>
+        </ul>
+      </section>
+      <section class="vocab-list">
+        <h4>Types de stage autorisés</h4>
+        <ul>
+          <li>Stage d’initiation</li>
+          <li>Stage d’application</li>
+          <li>Projet de fin d’études</li>
+          <li>Stage de recherche</li>
+        </ul>
+      </section>
+      <section class="vocab-list">
+        <h4>Niveaux autorisés</h4>
+        <ul>
+          <li>Bac+2</li>
+          <li>Bac+3</li>
+          <li>Cycle ingénieur</li>
+          <li>Master</li>
+        </ul>
+      </section>
+      <section class="vocab-list">
+        <h4>Villes autorisées</h4>
+        <ul>
+          <li>Rabat</li>
+          <li>Casablanca</li>
+          <li>Fès</li>
+          <li>Tanger</li>
+          <li>Marrakech</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container callout">
+    <h2>5. Exemple de fiche d’offre normalisée</h2>
+    <pre class="json-block">{
+  "titre": "Stage Data Analyst",
+  "entreprise": "NovaTech",
+  "domaine": "Data & IA",
+  "ville": "Rabat",
+  "duree": "2 mois",
+  "niveau": "Cycle ingénieur",
+  "type_stage": "Stage d’application",
+  "competences": ["Python", "SQL", "Power BI"]
+}</pre>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-card">
+    <div>
+      <strong>StageMap — Architecture de l’information d’un portail de stages</strong>
+      <p>Mini-site statique réalisé pour présenter la démarche de modélisation, d’organisation et de structuration de l’information.</p>
+    </div>
+    <a class="back-top" href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>

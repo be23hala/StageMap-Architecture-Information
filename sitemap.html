@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitemap - Projet StageMap en architecture de l'information.">
+  <title>Sitemap | StageMap</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="page-sitemap">
+
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="StageMap - Accueil">
+      <span class="brand-mark">SM</span>
+      <span>StageMap</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir la navigation" aria-expanded="false">
+      Menu
+    </button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="flows.html">User flows</a>
+      <a href="wireframes.html">Wireframes</a>
+      <a href="metadata.html">Métadonnées</a>
+      <a href="ontology.html">Ontologie</a>
+      <a href="content-model.html">Modèle de contenu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="container page-hero">
+  <p class="breadcrumb"><a href="index.html">Accueil</a> / Sitemap</p>
+  <h1>Sitemap : plan du portail StageMap</h1>
+  <p>
+    Le sitemap formalise l’organisation globale de l’information.
+    Il montre les grandes rubriques, les sous-rubriques et les liens logiques entre les contenus.
+  </p>
+  <div class="pill-row">
+    <span class="pill">Hiérarchie</span>
+    <span class="pill">Navigation</span>
+    <span class="pill">Catégorisation</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container diagram-card">
+    <h2>1. Arborescence générale du site</h2>
+    <p class="section-intro">
+      La structure a été pensée pour couvrir les trois grands besoins : chercher une offre,
+      se préparer à candidater et comprendre l’écosystème des entreprises.
+    </p>
+
+    <div class="site-map-tree" role="img" aria-label="Sitemap du portail StageMap">
+      <div class="tree-root">Accueil StageMap</div>
+      <div class="tree-columns">
+        <section class="tree-node">
+          <strong>Offres de stage</strong>
+          <div class="tree-leaf">Par domaine</div>
+          <div class="tree-leaf">Par ville</div>
+          <div class="tree-leaf">Par durée</div>
+          <div class="tree-leaf">Détail d’une offre</div>
+        </section>
+        <section class="tree-node">
+          <strong>Conseils</strong>
+          <div class="tree-leaf">Rédiger un CV</div>
+          <div class="tree-leaf">Préparer un entretien</div>
+          <div class="tree-leaf">Email de candidature</div>
+        </section>
+        <section class="tree-node">
+          <strong>Entreprises</strong>
+          <div class="tree-leaf">Fiches entreprises</div>
+          <div class="tree-leaf">Secteurs d’activité</div>
+          <div class="tree-leaf">Stages proposés</div>
+        </section>
+        <section class="tree-node">
+          <strong>Ressources</strong>
+          <div class="tree-leaf">Modèles de CV</div>
+          <div class="tree-leaf">Checklist de candidature</div>
+          <div class="tree-leaf">FAQ</div>
+        </section>
+        <section class="tree-node">
+          <strong>À propos</strong>
+          <div class="tree-leaf">Objectif du portail</div>
+          <div class="tree-leaf">Méthode IA</div>
+          <div class="tree-leaf">Contact fictif</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <article class="card">
+      <h2>2. Principes de classification</h2>
+      <ul class="checklist">
+        <li>Classement par intention utilisateur plutôt que par logique interne.</li>
+        <li>Rubriques limitées et explicites pour réduire l’effort de navigation.</li>
+        <li>Regroupement des contenus éducatifs dans « Conseils » et « Ressources ».</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>3. Pourquoi cette structure ?</h2>
+      <p>
+        Le portail distingue clairement les contenus transactionnels
+        — consulter une offre — des contenus d’accompagnement
+        — comprendre comment candidater. Cette séparation évite les ambiguïtés
+        et soutient une navigation plus intuitive.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container table-card">
+    <h2>4. Tableau de correspondance des sections</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Rôle</th>
+            <th>Question utilisateur résolue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Offres</td>
+            <td>Accès aux opportunités</td>
+            <td>« Quel stage correspond à mon profil ? »</td>
+          </tr>
+          <tr>
+            <td>Conseils</td>
+            <td>Accompagnement pédagogique</td>
+            <td>« Comment améliorer ma candidature ? »</td>
+          </tr>
+          <tr>
+            <td>Entreprises</td>
+            <td>Compréhension de l’environnement professionnel</td>
+            <td>« Quels types d’entreprises recrutent ? »</td>
+          </tr>
+          <tr>
+            <td>Ressources</td>
+            <td>Outils directement réutilisables</td>
+            <td>« Que puis-je télécharger ou consulter rapidement ? »</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-card">
+    <div>
+      <strong>StageMap — Architecture de l’information d’un portail de stages</strong>
+      <p>Mini-site statique réalisé pour présenter la démarche de modélisation, d’organisation et de structuration de l’information.</p>
+    </div>
+    <a class="back-top" href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>
